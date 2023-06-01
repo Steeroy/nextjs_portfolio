@@ -71,8 +71,8 @@ export default function Layout({ skills, newest_projects }) {
                 Fullstack Developer
               </h5>
               <p className="text-base font-normal font-inter">
-                I design and develop great web and mobile app
-                <br /> experiences.
+                I design and develop great web and <br /> mobile app
+                 experiences.
               </p>
 
               <div className="buttons flex">
