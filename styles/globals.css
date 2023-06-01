@@ -181,6 +181,7 @@ a {
   flex-direction: column;
   gap: 136px;
   overflow-y: auto;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
