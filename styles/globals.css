@@ -670,6 +670,10 @@ a {
   .allprojects-container .back-all .featured-item .item-content {
     width: 100%;
   }
+
+  .allprojects-container .back-all .featured-item .item-buttons {
+    gap: 18px;
+  }
 }
 
 @media only screen and (max-width: 560px) {
