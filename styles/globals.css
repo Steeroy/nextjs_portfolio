@@ -648,7 +648,18 @@ a {
     gap: 24px;
   }
 
+  .main-container .main-section .right-section .contact {
+    padding: 0px !important;
+  }
+
   .main-container .right-section .contact form div {
     width: 100% !important;
+  }
+
+  .main-section .right-section .skills-section .tools .tools-grid-container {
+    display: grid;
+    grid-template-columns: auto auto !important;
+    column-gap: 28px;
+    row-gap: 24px;
   }
 }
