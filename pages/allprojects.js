@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export async function getServerSideProps() {
   await db.connect();
-  const all_projects = await Project.find().lean();
+  const all_projects = await Project.find().sort({ createdAt: -1 }).lean();
 
   return {
     props: {
