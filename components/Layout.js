@@ -6,7 +6,6 @@ import Skills from './Skills';
 import FeaturedProjects from './FeaturedProjects';
 import { ToastContainer } from 'react-toastify';
 import ContactMe from './ContactMe';
-import Link from 'next/link';
 
 export default function Layout({ skills, newest_projects }) {
   const [activeSection, setActiveSection] = useState('about');
@@ -27,7 +26,6 @@ export default function Layout({ skills, newest_projects }) {
         const element = document.getElementById(section);
         const rect = element.getBoundingClientRect();
         const top = rect.top;
-        const bottom = rect.bottom;
 
         if (top >= 0) {
           setActiveSection(section);

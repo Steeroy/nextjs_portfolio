@@ -1,6 +1,6 @@
 import { Icon } from '@iconify/react';
 import React, { useState } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import { sendContactForm } from '../lib/server';
 
 export default function ContactMe() {

@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Icon } from '@iconify/react';
+import Link from 'next/link';
 import React from 'react';
 
 export default function FeaturedProjects({ newest_projects }) {
@@ -61,14 +62,14 @@ export default function FeaturedProjects({ newest_projects }) {
           </div>
         ))}
       </div>
-      <a href="#" target="_blank" rel="noopener noreferrer">
+      <Link href="/allprojects">
         <button type="button" className="all-projects flex">
           <span className=" text-lg font-semibold font-inter">
             All Projects
           </span>
           <Icon icon="ph:arrow-right-bold" />
         </button>
-      </a>
+      </Link>
     </section>
   );
 }
