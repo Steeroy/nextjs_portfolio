@@ -3,30 +3,48 @@ import React, { useEffect, useState } from 'react';
 import { Icon } from '@iconify/react';
 import About from './About';
 import Skills from './Skills';
+import FeaturedProjects from './FeaturedProjects';
+import { ToastContainer } from 'react-toastify';
+import ContactMe from './ContactMe';
+import Link from 'next/link';
 
-export default function Layout() {
+export default function Layout({ skills, newest_projects }) {
   const [activeSection, setActiveSection] = useState('about');
 
   function scrollToSection(sectionId) {
+    setActiveSection(sectionId);
     document.getElementById(sectionId).scrollIntoView({
       behavior: 'smooth',
     });
   }
 
   useEffect(() => {
+    const rightSection = document.querySelector('.right-section');
     const handleScroll = () => {
-      const aboutSection = document.getElementById('about');
-      const rect = aboutSection.getBoundingClientRect();
-      if (rect.top <= 0 && rect.bottom > 0) {
-        setActiveSection('about');
+      const sections = ['about', 'skills', 'projects'];
+
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        const rect = element.getBoundingClientRect();
+        const top = rect.top;
+        const bottom = rect.bottom;
+
+        if (top >= 0) {
+          setActiveSection(section);
+          break;
+        }
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    rightSection.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      rightSection.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const handleButtonClick = () => {
+    window.open('/Resume.pdf', '_blank');
+  };
 
   return (
     <>
@@ -38,6 +56,8 @@ export default function Layout() {
         />
         <link rel="icon" href="/images/logo.png" />
       </Head>
+
+      <ToastContainer position="top-center" limit={1} />
 
       <div className="main-container">
         <div className="main-section flex flex-col lg:flex-row">
@@ -58,13 +78,20 @@ export default function Layout() {
               </p>
 
               <div className="buttons flex">
-                <button type="button" className="primary">
-                  <span className="text-sm font-medium font-inter">
-                    Contact Me
-                  </span>
-                  <Icon icon="ph:arrow-right-bold" />
-                </button>
-                <button type="button" className="secondary">
+                <a href="#contact">
+                  <button type="button" className="primary">
+                    <span className="text-sm font-medium font-inter">
+                      Contact Me
+                    </span>
+                    <Icon icon="ph:arrow-right-bold" />
+                  </button>
+                </a>
+
+                <button
+                  onClick={handleButtonClick}
+                  type="button"
+                  className="secondary"
+                >
                   <span className="text-sm font-medium font-inter">Resume</span>
                   <Icon icon="ic:round-save-alt" />
                 </button>
@@ -149,7 +176,9 @@ export default function Layout() {
           </div>
           <div className="right-section w-full lg:w-7/12">
             <About />
-            <Skills />
+            <Skills skills={skills} />
+            <FeaturedProjects newest_projects={newest_projects} />
+            <ContactMe />
           </div>
         </div>
       </div>

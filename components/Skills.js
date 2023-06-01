@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import data from '../utils/data';
 
 const services = [
   {
@@ -20,7 +19,7 @@ const services = [
   },
 ];
 
-export default function Skills() {
+export default function Skills({ skills }) {
   return (
     <section id="skills" className="skills-section flex flex-col">
       <div className="services">
@@ -41,7 +40,7 @@ export default function Skills() {
       <div className="tools flex flex-col">
         <h5 className=" text-2xl font-bold font-poppins">Tools</h5>
         <div className="tools-grid-container">
-          {data.tools.map((item) => (
+          {skills.map((item) => (
             <div className="tool-item flex" key={item._id}>
               <div className="img-box">
                 <img src={item.imgUrl} alt={item.name} />

@@ -330,3 +330,243 @@ a {
   span {
   color: var(--secondary-color);
 }
+
+.main-container .main-section .right-section .featured-projects {
+  gap: 32px;
+  align-items: center;
+  width: 100%;
+}
+
+.main-container .main-section .right-section .featured-projects h4 {
+  color: var(--primary-color);
+}
+
+.main-container
+  .main-section
+  .right-section
+  .featured-projects
+  .newest-projects {
+  gap: 28px;
+}
+
+.featured-item {
+  width: 100%;
+  padding: 24px;
+  gap: 24px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 104px auto;
+  border-radius: 8px;
+  transition: 0.5s ease-in-out;
+}
+
+.featured-item:hover {
+  background: #1c2942;
+}
+
+.featured-item .item-image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.featured-item .item-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.featured-item .item-content {
+  gap: 24px;
+}
+
+.featured-item .item-content .itext-texts {
+  gap: 8px;
+}
+
+.featured-item .item-content .itext-texts h5 {
+  color: var(--primary-color);
+}
+
+.featured-item .item-content .itext-texts p {
+  color: var(--secondary-color);
+}
+
+.featured-item .item-content .tools-used {
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.featured-item .item-content .tools-used .tool-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 20px;
+  height: 28px;
+  background: #9b99fd;
+  color: var(--background-color);
+}
+
+.featured-item .item-content .item-buttons {
+  align-items: center;
+  gap: 36px;
+}
+
+.featured-item .item-content .item-buttons svg {
+  width: 28px;
+  height: 28px;
+  color: var(--secondary-color);
+}
+
+.featured-item .item-content .item-buttons button {
+  height: 28px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.featured-item .item-content .item-buttons button span {
+  color: var(--secondary-color);
+}
+
+.main-container .main-section .right-section .featured-projects .all-projects {
+  gap: 12px;
+  align-items: center;
+  height: 42px;
+  padding: 0px 20px;
+  border-radius: 20px;
+  background: var(--secondary-color);
+  color: var(--background-color);
+  transition: 0.5s ease-in-out;
+}
+
+.main-container
+  .main-section
+  .right-section
+  .featured-projects
+  .all-projects:hover {
+  gap: 18px;
+}
+
+.main-container
+  .main-section
+  .right-section
+  .featured-projects
+  .all-projects
+  svg {
+  width: 24px;
+  height: 24px;
+}
+
+.main-container .main-section .right-section .contact {
+  gap: 32px;
+  align-items: center;
+  padding: 0px 32px;
+}
+
+.main-container .main-section .right-section .contact h4 {
+  color: var(--primary-color);
+}
+
+.main-container .main-section .right-section .contact form {
+  gap: 24px;
+  align-items: center;
+  width: 100%;
+}
+
+.main-container .main-section .right-section .contact form div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 70%;
+}
+
+.main-container .main-section .right-section .contact form div label {
+  color: var(--secondary-color);
+}
+
+.main-container .main-section .right-section .contact form div input {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  border: none;
+  border-radius: 20px;
+  background: #1c2942;
+  color: var(--secondary-color);
+  padding: 0px 16px;
+}
+
+.main-container
+  .main-section
+  .right-section
+  .contact
+  form
+  div
+  input::placeholder {
+  color: #455474;
+  font-weight: 500;
+}
+
+.main-container .main-section .right-section .contact form div input:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.main-container .main-section .right-section .contact form div textarea {
+  display: flex;
+  align-items: center;
+  min-height: 218px;
+  max-height: 218px;
+  border: none;
+  border-radius: 20px;
+  background: #1c2942;
+  color: var(--secondary-color);
+  padding: 12px 16px;
+  resize: none;
+}
+
+.main-container
+  .main-section
+  .right-section
+  .contact
+  form
+  div
+  textarea::placeholder {
+  color: #455474;
+  font-weight: 500;
+}
+
+.main-container .main-section .right-section .contact form div textarea:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.main-container
+  .main-section
+  .right-section
+  .contact
+  form
+  div
+  textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.main-container .main-section .right-section .contact form button {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  height: 42px;
+  padding: 0px 20px;
+  border-radius: 20px;
+  border: 2px solid var(--secondary-color);
+  background: var(--background-color);
+  color: var(--secondary-color);
+  transition: 0.5s ease-in-out;
+}
+
+.main-container .main-section .right-section .contact form button:hover {
+  gap: 18px;
+}
