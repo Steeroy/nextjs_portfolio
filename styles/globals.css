@@ -632,6 +632,35 @@ a {
   .main-container {
     padding: 24px;
   }
+
+  .allprojects-container {
+    padding: 24px;
+  }
+
+  .allprojects-container .back-all .featured-item .item-image {
+    width: 100%;
+  }
+
+  .allprojects-container .back-all .featured-item {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 0px;
+  }
+
+  .allprojects-container .back-all .featured-item .item-buttons svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .allprojects-container .back-all .featured-item .item-buttons button span {
+    font-size: 16px !important;
+  }
+
+  .allprojects-container .back-all .featured-item .item-buttons button {
+    height: 32px;
+  }
 }
 
 @media only screen and (max-width: 560px) {
