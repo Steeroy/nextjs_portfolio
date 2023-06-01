@@ -20,7 +20,7 @@ function allprojects({ all_projects }) {
   return (
     <section className="allprojects-container flex flex-col gap-4">
       <Link href="/">
-        <button>
+        <button className="all-projects-button">
           <Icon icon="ph:arrow-left-bold" />
           <span className="text-2xl font-semibold font-inter">Home</span>
         </button>

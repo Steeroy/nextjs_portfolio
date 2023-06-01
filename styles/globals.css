@@ -635,6 +635,20 @@ a {
 
   .allprojects-container {
     padding: 24px;
+    gap: 48px;
+  }
+
+  .allprojects-container .all-projects-button {
+    height: 38px;
+  }
+
+  .allprojects-container .all-projects-button svg {
+    width: 18px;
+    width: 18px;
+  }
+
+  .allprojects-container .all-projects-button span {
+    font-size: 16px;
   }
 
   .allprojects-container .main-section {
