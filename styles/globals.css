@@ -463,6 +463,7 @@ a {
   gap: 32px;
   align-items: center;
   padding: 0px 32px;
+  margin-bottom: 32px;
 }
 
 .main-container .main-section .right-section .contact h4 {
@@ -603,4 +604,51 @@ a {
 .allprojects-container button svg {
   width: 24px;
   height: 24px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-container {
+    padding: 48px 48px 48px 48px;
+  }
+
+  .main-container .main-section {
+    flex-direction: column;
+    gap: 32px;
+    overflow: scroll;
+    height: auto !important;
+  }
+
+  .main-container .main-section .left-section {
+    overflow: visible;
+    margin-bottom: 68px;
+  }
+
+  .main-container .main-section .right-section {
+    gap: 68px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-container {
+    padding: 24px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .main-container .right-section .services-boxes {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .main-container .right-section .featured-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .main-container .right-section .contact form div {
+    width: 100% !important;
+  }
 }
