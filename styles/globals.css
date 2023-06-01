@@ -637,8 +637,8 @@ a {
     padding: 24px;
   }
 
-  .allprojects-container .back-all .featured-item .item-image {
-    width: 100%;
+  .allprojects-container .main-section {
+    gap: 48px;
   }
 
   .allprojects-container .back-all .featured-item {
@@ -647,6 +647,11 @@ a {
     align-items: center;
     gap: 24px;
     padding: 0px;
+    width: 100% !important;
+  }
+
+  .allprojects-container .back-all .featured-item .item-image {
+    width: 100%;
   }
 
   .allprojects-container .back-all .featured-item .item-buttons svg {
@@ -660,6 +665,10 @@ a {
 
   .allprojects-container .back-all .featured-item .item-buttons button {
     height: 32px;
+  }
+
+  .allprojects-container .back-all .featured-item .item-content {
+    width: 100%;
   }
 }
 
