@@ -156,7 +156,7 @@ export default function Layout({ skills, newest_projects }) {
                   <Icon icon="ri:twitter-fill" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/siyanda-mvunyiswa-596654199/"
+                  href="https://www.linkedin.com/in/siyanda-m-596654199/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
